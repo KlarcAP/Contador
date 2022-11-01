@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    align-items: center;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    margin: 20px 0;
+}
+
+.input{
+    width: 100%;
+    border: 1px solid black;
+    padding: 14px 0px 2px 8px;
+    font-size: 19px;
+    margin: 0;
+    outline: 0;
+    border-radius: 3px;
+    display: flex;
+    position: relative;
+}
+
+.task{
+    position: relative;
+    justify-content: center;
+    outline: 0;
+    margin: 13px 0;
+}
+
+.task label{
+    position: absolute;
+    left: 3px;
+    cursor: text;
+    outline: 0;
+    transition: all 0.2s;
+
+}
+
+form .task .input:focus ~ label{
+    transform: translateY(-30px);
+    font-size: 12px;
+}
